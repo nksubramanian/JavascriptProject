@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript</title>
+<script>
+function OnCreate() {
+  var x = document.forms["Create a New Room"]["newroomname"].value;
+  console.log(x);
+  alert(x)
+}
+function OnJoin() {
+  var x = document.forms["Join a Room"]["joinaroom"].value;
+  console.log(x);
+  alert(x)
+}
+
+
+function OnPlay() {
+  var x = document.forms["Join a Room"]["joinaroom"].value;
+  console.log(x);
+  alert(x)
+}
+
+
+function OnPlay(value) {
+  alert(value)
+  console.log(value)
+}
+
+function OnReset(value) {
+  alert(value)
+  console.log(value)
+}
+
+
+
+
+</script>
+
+
+<div>
+</head>
+<body>
+<form name="Create a New Room" onsubmit="OnCreate()" method="post">
+Create a New Room
+<p>Name:</p> 
+<p><input type="text" name="newroomname"></p>
+<p><input type="submit" value="Submit" name="Submit"></p>
+</form>
+</div>
+
+
+<div>
+<body>
+<form name="Join a Room" onsubmit="OnJoin()" method="post">
+Join a Room
+<p>Name:</p> 
+<p><input type="text" name="joinaroom"></p>
+<p><input type="submit" value="Submit" name="Submit"></p>
+</form>
+</div>
+
+<div>
+<p>Information</p>
+</div
+
+
+
+<div>
+<p>
+<div onclick="OnPlay(1);" style="cursor: pointer">1</div>
+<div onclick="OnPlay(2);" style="cursor: pointer">2</div>
+<div onclick="OnPlay(3);" style="cursor: pointer">3</div>
+<div onclick="OnPlay(4);" style="cursor: pointer">4</div>
+<div onclick="OnPlay(5);" style="cursor: pointer">5</div>
+<div onclick="OnPlay(6);" style="cursor: pointer">6</div>
+<div onclick="OnPlay(7);" style="cursor: pointer">7</div>
+<div onclick="OnPlay(8);" style="cursor: pointer">8</div>
+<div onclick="OnPlay(9);" style="cursor: pointer">9</div>
+</p>
+</div>
+ 
+ 
+ 
+ <div>
+<p>
+<span><button name="sub" type="submit" value="Reset" onclick="OnReset(value)">Reset</button></span>
+<span><button name="sub" type="submit" value="Switch" onclick="OnReset(value)">Switch</button></span>
+</p>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
